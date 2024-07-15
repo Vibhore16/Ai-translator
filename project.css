@@ -1,0 +1,36 @@
+body {
+    background-color: whitesmoke;
+    background-image: url(../Images/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 155%;
+   }
+.navbar{
+    background-color: rgb(201, 158, 241);
+}
+.navbar-brand{
+    font-family:monospace;
+}
+.T2{
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+.main{
+    text-align: center;
+}
+
+.btn{
+    background-color: rgb(201, 158, 241);
+}
+
+.zeyada-regular {
+    font-family: "Zeyada", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+.amatic-sc-regular {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+

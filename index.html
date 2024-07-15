@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Translator Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/project.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Zeyada&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color: black;">Translator</a>
+        </div>
+    </nav>
+    <br><br><br>
+    <div class="main">
+        <div class="container" id="box">
+            <br>
+        <h2 class="zeyada-regular">Japanese to English Translator</h2>
+        <br>
+        <form id="translateForm" method="post" action="/translate">
+            <textarea class="amatic-sc-regular" id="input_text" name="input_text" rows="4" cols="50" placeholder="Enter Japanese text to translate..."></textarea><br><br>
+            <button type="button" id="start_recognition" class="btn btn-secondary">Start Speaking</button><br><br>
+            <input type="file" id="audio_file" accept="audio/*"><br><br>
+            <button type="button" id="upload_audio" class="btn btn-secondary">Upload Audio</button><br><br>
+            <button type="button" id="submit_text" class="btn btn-primary">Translate Text</button>
+        </form>
+        <br>
+        <div id="translated_text"></div>
+    </div>
+</div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+
+</body>
+</html>
